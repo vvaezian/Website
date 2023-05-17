@@ -71,3 +71,26 @@ function initCap(str) {
     }
     return words.join(' ');
   }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var projectLinks = document.getElementsByClassName('project-link');
+    
+    for (var i = 0; i < projectLinks.length; i++) {
+        projectLinks[i].addEventListener('click', function(event) {
+            
+            if (this.getAttribute('href') === '') {
+                event.preventDefault(); // Prevent default link behavior
+
+                var projectInfo = this.parentNode.nextElementSibling;
+                if (projectInfo.classList.contains('show')) {
+                    projectInfo.classList.remove('show');
+                    projectInfo.style.height = '0px';
+                } else {
+                    projectInfo.style.height = projectInfo.scrollHeight + 'px';
+                    projectInfo.classList.add('show');
+                }
+            }
+        });
+    }
+});

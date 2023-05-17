@@ -8,6 +8,11 @@ h1 {
     margin-top: 20px;
 }
 
+#searchBox {
+    height: 22px;
+    margin-bottom: 10px;
+}
+
 .tag {
     display: inline-block;
     padding: 5px 10px;
@@ -64,4 +69,15 @@ h1 {
     padding: 2px 6px;
     background-color: #f1f1f1;
     margin: 2px;
+}
+
+
+.project-info {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease; /* Add transition for height */
+}
+
+.project-info.show {
+    height: 100px;
 }
