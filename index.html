@@ -5,19 +5,16 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <h1>My Portfolio</h1>
+  <h1>Portfolio</h1>
 
   <input type="text" id="searchBox" oninput="filterTags()" placeholder="Search tags">
 
   <div id="tags">
-    <div class="tag" onclick="filterProjects('All')">All</div>
+    <div class="tag" onclick="filterProjects('All')" style="font-weight: bold;">All</div>
+
     <div class="tag" onclick="filterProjects('Python')">Python</div>
-    <div class="tag" onclick="filterProjects('scikit-learn')">scikit-learn</div>
     <div class="tag" onclick="filterProjects('Keras')">Keras</div>
     <div class="tag" onclick="filterProjects('TensorFlow')">TensorFlow</div>
-    <div class="tag" onclick="filterProjects('Pandas')">Pandas</div>
-    <div class="tag" onclick="filterProjects('Numpy')">Numpy</div>
-    <div class="tag" onclick="filterProjects('matplotlib')">matplotlib</div>
     <div class="tag" onclick="filterProjects('OpenCV')">OpenCV</div>
     <div class="tag" onclick="filterProjects('MLflow')">MLflow</div>
     <div class="tag" onclick="filterProjects('Bash')">Bash</div>
@@ -25,12 +22,15 @@
     <div class="tag" onclick="filterProjects('SQL Server')">SQL Server</div>
     <div class="tag" onclick="filterProjects('PostgreSQL')">PostgreSQL</div>
     <div class="tag" onclick="filterProjects('BigQuery')">BigQuery</div>
+    <div class="tag" onclick="filterProjects('MySQL')">MySQL</div>
+    <div class="tag" onclick="filterProjects('SQLite')">SQLite</div>
     <div class="tag" onclick="filterProjects('AWS Lambda')">AWS Lambda</div>
     <div class="tag" onclick="filterProjects('Amazon RDS')">Amazon RDS</div>
     <div class="tag" onclick="filterProjects('Amazon EC2')">Amazon EC2</div>
     <div class="tag" onclick="filterProjects('Amazon API Gateway')">Amazon API Gateway</div>
     <div class="tag" onclick="filterProjects('Amazon SageMaker')">Amazon SageMaker</div>
     <div class="tag" onclick="filterProjects('AWS Elastic Beanstalk')">AWS Elastic Beanstalk</div>
+    <div class="tag" onclick="filterProjects('Amazon Cognito')">Amazon Cognito</div>
     <div class="tag" onclick="filterProjects('AWS Glue')">AWS Glue</div>
     <div class="tag" onclick="filterProjects('Amazon S3')">Amazon S3</div>
     <div class="tag" onclick="filterProjects('Amazon ECS')">Amazon ECS</div>
@@ -38,7 +38,10 @@
     <div class="tag" onclick="filterProjects('Metabase')">Metabase</div>
     <div class="tag" onclick="filterProjects('Qlik')">Qlik</div>
     <div class="tag" onclick="filterProjects('Looker Studio (Data Studio)')">Looker Studio (Data Studio)</div>
-    <div class="tag" onclick="filterProjects('SalesForce')">SalesForce</div>
+    <div class="tag" onclick="filterProjects('BI')">BI</div>
+    <div class="tag" onclick="filterProjects('ETL')">ETL</div>
+    <div class="tag" onclick="filterProjects('Web Scraping')">Web Scraping</div>
+    <div class="tag" onclick="filterProjects('PDF ScrapingSalesForce')">PDF ScrapingSalesForce</div>
     <div class="tag" onclick="filterProjects('SOQL')">SOQL</div>
     <div class="tag" onclick="filterProjects('APEX')">APEX</div>
     <div class="tag" onclick="filterProjects('VF Pages')">VF Pages</div>
@@ -57,9 +60,12 @@
     <div class="tag" onclick="filterProjects('.Net MAUI')">.Net MAUI</div>
     <div class="tag" onclick="filterProjects('C#')">C#</div>
     <div class="tag" onclick="filterProjects('XAML')">XAML</div>
-    <div class="tag" onclick="filterProjects('Image Detection')">Image Detection</div>
+    <div class="tag" onclick="filterProjects('Object Detection')">Object Detection</div>
     <div class="tag" onclick="filterProjects('Image Recognition')">Image Recognition</div>
+    <div class="tag" onclick="filterProjects('Few-shot Learning')">Few-shot Learning</div>
+    <div class="tag" onclick="filterProjects('Transfer Learning')">Transfer Learning</div>
     <div class="tag" onclick="filterProjects('Outlier Detection')">Outlier Detection</div>
+    <div class="tag" onclick="filterProjects('Statistical Analysis')">Statistical Analysis</div>
     <div class="tag" onclick="filterProjects('Demand Forecasting')">Demand Forecasting</div>
     <div class="tag" onclick="filterProjects('Price Optimization')">Price Optimization</div>
     <div class="tag" onclick="filterProjects('Production Planning')">Production Planning</div>
@@ -67,46 +73,146 @@
     <div class="tag" onclick="filterProjects('Time Series')">Time Series</div>
     <div class="tag" onclick="filterProjects('ChatGPT')">ChatGPT</div>
     <div class="tag" onclick="filterProjects('Chatbot')">Chatbot</div>
+    <div class="tag" onclick="filterProjects('ForecastPro')">ForecastPro</div>
+    <div class="tag" onclick="filterProjects('Linear Optimization')">Linear Optimization</div>
+    <div class="tag" onclick="filterProjects('CVAT')">CVAT</div>    
     
   </div>
+    <div id="projects" class="project-container">
+        <div class="project" data-tags="Python, Deep Learning, Tensorflow, Keras, CVAT, OpenCV, PostgreSQL, Amazon SageMaker, Amazon RDS, Amazon S3, AWS Lambda, 
+        Amazon Rekognition, AWS, Object Detection, Image Recognition, Few-shot Learning, Transfer Learning">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Object Detection and Image Recognition for Liquor Stores Shelf Images</a>
+            </div>
+            <div class="tags"></div>
+        </div>
 
-  <div id="projects" class="project-container">
-      <div class="project" data-tags="Python, Pandas, Statistical Analysis, Outlier Detection">
-          <div class="project-title">
-              <a class="project-link" href="https://github.com/vvaezian/modified_thompson_tau_test" target="_blank">Python Package for Modified Thompson Tau Test</a>
-          </div>
-          <div class="tags"></div>
-      </div>
-      <div class="project" data-tags="Python, Metabase, BI">
-          <div class="project-title">
-              <a class="project-link" href="https://github.com/vvaezian/metabase_api_python" target="_blank">Python Wrapper for Metabase API</a>
-          </div>
-          <div class="tags"></div>
-      </div>
-      <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, AWS S3, App Development">
-          <div class="project-title">
-              <a class="project-link" href="https://github.com/user/repo3" target="_blank">"Shelf Analyzer" Mobile App</a>
-          </div>
-          <div class="tags"></div>
-      </div>
-      <div class="project" data-tags="ChatGPT, Python, Flask, Amazon ElasticBeanstalk, HTML, CSS, Chatbot, AWS">
-        <div class="project-title">
-            <a class="project-link" href="https://github.com/vvaezian/metabase_api_python" target="_blank">Chatbot Interface with ChatGPT Backend Live Demo</a>
+        <div class="project" data-tags="Salesforce, Apex, VF Pages, SOQL, SQL Server, PostgreSQL, Amazon RDS, Amazon API Gateway, AWS Lambda, Amazon EC2, GitHub, CI/CD, Metabase, AWS">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Analytics Solution Delivery in Salesforce</a>
+            </div>
+            <div class="tags"></div>
         </div>
-        <div class="tags"></div>
-      </div>
-      <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, GCP Cloud Functions, HTML, CSS, JavaScript, PHP, Chatbot, AWS, GCP, BI">
-        <div class="project-title">
-            <a class="project-link" href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">ChatGPT Integration with BI Tools Live Demo</a>
+
+        <div class="project" data-tags="ChatGPT, Python, Flask, Amazon ElasticBeanstalk, HTML, CSS, Chatbot, AWS">
+            <div class="project-title">
+                <a class="project-link" href="http://chatgptdemo-env.eba-nf9heacb.us-west-2.elasticbeanstalk.com/" target="_blank">Chatbot Interface with ChatGPT Backend Live Demo</a>
+            </div>
+            <div class="tags"></div>
         </div>
-        <div class="tags"></div>
-      </div>
-      <div class="project" data-tags="Python, AWS Lambda, GCP Cloud Functions, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, Chatbot, AWS, GCP, BI">
+        
+        <div class="project" data-tags="Python, SQL Server, Statistical Analysis, Amazon EC2, AWS Lambda, AWS">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Outlier Detection</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Machine Learning">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Price Optimization</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, GCP Cloud Functions, HTML, CSS, JavaScript, PHP, Chatbot, AWS, GCP, BI">
+            <div class="project-title">
+                <a class="project-link" href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">ChatGPT Integration with BI Tools Live Demo</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Machine Learning, Time Series, Metabase, ForecastPro, Demand Forecasting, PDF Scraping">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Demand Forecasting</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Linear Optimization">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Production Planning</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Machine Learning">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Curve Fitting to Estimate Missing Data</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, Statistical Analysis, Outlier Detection">
+            <div class="project-title">
+                <a class="project-link" href="https://github.com/vvaezian/modified_thompson_tau_test" target="_blank">Python Package for Modified Thompson Tau Test</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, Metabase, BI">
+            <div class="project-title">
+                <a class="project-link" href="https://github.com/vvaezian/metabase_api_python" target="_blank">Python Wrapper for Metabase API</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, AWS S3, App Development">
+            <div class="project-title">
+                <a class="project-link" href="https://github.com/user/repo3" target="_blank">"Shelf Analyzer" Mobile App</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, AWS Lambda, Amazon RDS, GCP Cloud Functions, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, Chatbot, AWS, GCP, BI">
         <div class="project-title">
             <a class="project-link" href="https://intellimenta.com/movie_bot/movie_bot.html" target="_blank">Movie Bot</a>
         </div>
         <div class="tags"></div>
-      </div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, PostgreSQL, Amazon RDS, Bash, Metabase, AWS, BI">
+        <div class="project-title">
+            <a class="project-link" href="http://metabase.intellimenta.com/public/dashboard/f9b5e04b-9755-489d-9f5d-6adc3e3806fd" target="_blank">Popularity Index for Programming Languages</a>
+        </div>
+        <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Metabase, Looker Studio (Data Studio), BigQuery">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Looker Studio (Data Studio) to Metabase Migration</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Bash, PowerShell, SQL Server, Python">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">ETL Automation</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Java, PHP, SQLite, MySQL, Android, App Development">
+            <div class="project-title">
+                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.vvaezian.multilingovocabularypractice" target="_blank">"MultiLingo Vocabulary Practice" Mobile App</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, PostgreSQL, Amazon RDS, AWS Lambda, Metabase, ETL, AWS, BI, Web Scraping">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Ingesting Live Sensor Data and Visualization</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, Java, Bash, JavaScript, PDF Scraping">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">PDF Image Scraping and Categorization</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
   </div>
 
   <script src="scripts.js"></script>

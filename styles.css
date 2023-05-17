@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -13,7 +14,12 @@ h1 {
     margin: 5px;
     background-color: #f1f1f1;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+.tag:hover {
+    color: #00aeff; /* Color on hover */
+  }
 
 .tag.active {
     background-color: #ddd;
@@ -27,7 +33,7 @@ h1 {
 }
 
 .project {
-    width: 500px;
+    width: 700px;
     height: auto;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
