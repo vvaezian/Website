@@ -44,6 +44,17 @@ function filterTags() {
 
 function generate_project_tags() {
     // Generate tag items for each project
+
+    no_logo_list = [
+        'Machine Learning', 'Deep Learning', 'Object Detection','Image Recognition','Few-shot Learning','Transfer Learning','Outlier Detection',
+        'Statistical Analysis','Demand Forecasting','Price Optimization','Production Planning','NLP','Sentiment Analysis',
+        'CI/CD','Time Series Analysis','Chatbot','Linear Optimization','App Development','BI','ETL','Web Scraping','PDF Scraping'
+    ]
+
+    logo_name_mapping = {
+        'C#':'csharp', '.Net MAUI':'dotnetmaui', 'Looker Studio (Data Studio)':'lookerstudio'
+    }
+
     var projects = document.getElementsByClassName("project");
     for (var i = 0; i < projects.length; i++) {
         var tags = projects[i].getAttribute("data-tags").split(", ");
@@ -52,8 +63,22 @@ function generate_project_tags() {
         for (var j = 0; j < tags.length; j++) {
             var tagItem = document.createElement("span");
             tagItem.classList.add("tag-item");
-            //tagItem.innerHTML = initCap(tags[j]);
-            tagItem.innerHTML = tags[j];
+
+            if ( no_logo_list.includes(tags[j]) ) {
+                tagItem.innerHTML = tags[j];
+            }
+            else {
+                var logo_name = tags[j]
+
+                if (logo_name in logo_name_mapping){ 
+                    logo_name = logo_name_mapping[logo_name] 
+                } else {
+                    logo_name = logo_name.replace("Amazon ", "").replace("AWS ", "").replace(" ", "").trim()
+                }
+                
+                tagItem.innerHTML = `<img src="logos/${logo_name}-logo.png" alt="${logo_name}" class="tag-logo">` + tags[j] + '</img>';
+            }
+            
             tagsContainer.appendChild(tagItem);
         }
     }
