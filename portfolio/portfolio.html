@@ -26,7 +26,7 @@
     <div class="tag" onclick="filterProjects('BigQuery')"><img src="logos/bigquery-logo.png" alt="bigquery logo" class="tag-logo">BigQuery</div>
     <div class="tag" onclick="filterProjects('MySQL')"><img src="logos/mysql-logo.png" alt="mysql logo" class="tag-logo">MySQL</div>
     <div class="tag" onclick="filterProjects('SQLite')"><img src="logos/sqlite-logo.png" alt="sqlite logo" class="tag-logo">SQLite</div>
-    <div class="tag" onclick="filterProjects('dbt')"><img src="logos/dbt-logo.png" alt="dbt logo" class="tag-logo">dbt</div>
+    <!-- <div class="tag" onclick="filterProjects('dbt')"><img src="logos/dbt-logo.png" alt="dbt logo" class="tag-logo">dbt</div> -->
     <div class="tag" onclick="filterProjects('AWS Lambda')"><img src="logos/lambda-logo.svg" alt="aws Lambda logo" class="tag-logo">AWS Lambda</div>
     <div class="tag" onclick="filterProjects('Amazon RDS')"><img src="logos/rds-logo.svg" alt="rds logo" class="tag-logo">Amazon RDS</div>
     <div class="tag" onclick="filterProjects('Amazon EC2')"><img src="logos/ec2-logo.svg" alt="ec2 logo" class="tag-logo">Amazon EC2</div>
@@ -34,10 +34,10 @@
     <div class="tag" onclick="filterProjects('Amazon SageMaker')"><img src="logos/sagemaker-logo.jpg" alt="sagemaker logo" class="tag-logo">Amazon SageMaker</div>
     <div class="tag" onclick="filterProjects('AWS Elastic Beanstalk')"><img src="logos/elasticbeanstalk-logo.png" alt="elasticbeanstalk logo" class="tag-logo">AWS Elastic Beanstalk</div>
     <div class="tag" onclick="filterProjects('Amazon Cognito')"><img src="logos/cognito-logo.png" alt="cognito logo" class="tag-logo">Amazon Cognito</div>
-    <div class="tag" onclick="filterProjects('AWS Glue')"><img src="logos/glue-logo.png" alt="glue logo" class="tag-logo">AWS Glue</div>
+    <!-- <div class="tag" onclick="filterProjects('AWS Glue')"><img src="logos/glue-logo.png" alt="glue logo" class="tag-logo">AWS Glue</div> -->
     <div class="tag" onclick="filterProjects('Amazon S3')"><img src="logos/s3-logo.png" alt="s3 logo" class="tag-logo">Amazon S3</div>
     <div class="tag" onclick="filterProjects('Amazon ECS')"><img src="logos/ecs-logo.png" alt="ecs logo" class="tag-logo">Amazon ECS</div>
-    <div class="tag" onclick="filterProjects('Amazon EMR')"><img src="logos/emr-logo.png" alt="emr logo" class="tag-logo">Amazon EMR</div>
+    <!-- <div class="tag" onclick="filterProjects('Amazon EMR')"><img src="logos/emr-logo.png" alt="emr logo" class="tag-logo">Amazon EMR</div> -->
     <div class="tag" onclick="filterProjects('Metabase')"><img src="logos/metabase-logo.png" alt="metabase logo" class="tag-logo">Metabase</div>
     <div class="tag" onclick="filterProjects('Looker Studio (Data Studio)')"><img src="logos/lookerstudio-logo.png" alt="lookerstudio logo" class="tag-logo">Looker Studio (Data Studio)</div>
     <div class="tag" onclick="filterProjects('Salesforce')"><img src="logos/salesforce-logo.png" alt="salesforce logo" class="tag-logo">SalesForce</div>
@@ -81,15 +81,15 @@
   </div>
     <div id="projects" class="project-container">
         
-        <div class="project" data-tags="Python, Tensorflow, Keras, GitHub, Image Recognition, Deep Learning">
+        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Deep Learning">
             <div class="project-title">
                 <a class="project-link" href="https://github.com/vvaezian/Captcha-Solver" target="_blank">Captcha Solver</a>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, Deep Learning, Tensorflow, Keras, CVAT, OpenCV, PostgreSQL, Amazon SageMaker, Amazon RDS, Amazon S3, AWS Lambda, 
-        Amazon Rekognition, AWS, Object Detection, Image Recognition, Few-shot Learning, Transfer Learning">
+        <div class="project" data-tags="Python, Deep Learning, TensorFlow, Keras, CVAT, OpenCV, PostgreSQL, Docker, Amazon SageMaker, Amazon RDS, Amazon S3, AWS Lambda, 
+        Amazon Rekognition, Amazon ECS, AWS, Object Detection, Image Recognition, Few-shot Learning, Transfer Learning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Object Detection and Image Recognition for Liquor Stores Shelf Images</a>
             </div>
@@ -104,7 +104,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Salesforce, SQL Server, PostgreSQL, Amazon RDS, Amazon API Gateway, AWS Lambda, Amazon EC2, Metabase, AWS, CI/CD">
+        <div class="project" data-tags="Salesforce, SQL Server, PostgreSQL, Amazon RDS, AWS Lambda, Amazon API Gateway, Amazon EC2, Metabase, AWS, CI/CD">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Analytics Solution Delivery in Salesforce</a>
             </div>
@@ -113,7 +113,7 @@
 
         <div class="project" data-tags="ChatGPT, Python, Flask, AWS Elastic Beanstalk, HTML, CSS, Chatbot, AWS">
             <div class="project-title">
-                <a class="project-link" href="http://chatgptdemo-env.eba-nf9heacb.us-west-2.elasticbeanstalk.com/" target="_blank">Chatbot Interface with ChatGPT Backend Live Demo</a>
+                <a class="project-link" href="http://chatgptdemo-env.eba-nf9heacb.us-west-2.elasticbeanstalk.com/" target="_blank">Chatbot Interface with ChatGPT Backend (Live Demo)</a>
             </div>
             <div class="tags"></div>
         </div>
@@ -125,7 +125,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Metabase, Machine Learning">
+        <div class="project" data-tags="Python, SQL Server, Metabase, Machine Learning, Price Optimization">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Price Optimization</a>
             </div>
@@ -134,26 +134,33 @@
 
         <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
-                <a class="project-link" href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">ChatGPT Integration with BI Tools Live Demo</a>
+                <a class="project-link" href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">ChatGPT Integration with BI Tools (Live Demo)</a>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Metabase, ForecastPro, Demand Forecasting, Machine Learning, Time Series Analysis, PDF Scraping">
+        <div class="project" data-tags="Python, SQL Server, Metabase, ForecastPro, MLflow, Demand Forecasting, Machine Learning, Time Series Analysis, PDF Scraping">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/shared/blob/main/Time%20Series%20Forecasting.ipynb" target="_blank">Demand Forecasting</a>
+                <a class="project-link" href="" target="_blank">Demand Forecasting</a>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Linear Optimization">
+        <div class="project" data-tags="Python, GitHub, Time Series Analysis, Statistical Analysis">
+            <div class="project-title">
+                <a class="project-link" href="https://github.com/vvaezian/shared/blob/main/Time%20Series%20Forecasting.ipynb" target="_blank">Time Series Analysis of Ridership Data</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Linear Optimization, Production Planning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Production Planning</a>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, Tensorflow, Keras, GitHub, NLP, Sentiment Analysis, Deep Learning">
+        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, NLP, Sentiment Analysis, Deep Learning">
             <div class="project-title">
                 <a class="project-link" href="https://github.com/vvaezian/Twitter_Sentiment_Analysis" target="_blank">Sentiment Analysis of Twitter Data</a>
             </div>
@@ -181,14 +188,14 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, AWS S3, App Development">
+        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, Amazon S3, App Development">
             <div class="project-title">
                 <a class="project-link" href="https://github.com/user/repo3" target="_blank">"Shelf Analyzer" Mobile App</a>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, AWS Lambda, Amazon RDS, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, Chatbot, AWS, GCP, Chatbot, BI">
+        <div class="project" data-tags="Python, AWS Lambda, Amazon RDS, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
         <div class="project-title">
             <a class="project-link" href="https://intellimenta.com/movie_bot/movie_bot.html" target="_blank">Movie Bot</a>
         </div>

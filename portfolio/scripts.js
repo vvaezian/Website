@@ -79,6 +79,12 @@ function generate_project_tags() {
                 tagItem.innerHTML = `<img src="logos/${logo_name}-logo.png" alt="${logo_name}" class="tag-logo">` + tags[j] + '</img>';
             }
             
+            (function(tag) {
+                tagItem.addEventListener('click', function() {
+                    filterProjects(tag);
+                });
+            })(tags[j]);
+            
             tagsContainer.appendChild(tagItem);
         }
     }

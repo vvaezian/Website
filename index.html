@@ -16,6 +16,13 @@
       display: flex;
       flex-direction: column;
     }
+
+    #main {
+      max-width: 1200px;
+      margin-left: 50px;
+      margin-right: auto;
+      margin-top:50px;
+    }
     
     header {
       background-color: #333;
@@ -75,28 +82,31 @@
 <body>
   
   <nav>
-
   </nav>
-  
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is Vahid Vaezian and I'm a Full-stack Data Scientist. I have a passion for Movies and enjoy Camping and Nature. On this website, you'll find more information about me, my work, and how to get in touch.</p>
-  </section>
-  
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Check out some of my latest projects <a href="./portfolio/portfolio.html">here</a>.</p>
-  </section>
-  
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you have any questions or would like to collaborate, feel free to reach out to me through the following channels:</p>
-    <ul>
-      <li>Email: <kbd>vahid.vaezian [at] gmail.com</kbd></li>
-      <li><a href="https://www.linkedin.com/in/vahid-vaezian-13283241/">LinkedIn</a></li>
-      <li><a href="https://github.com/vvaezian">GitHub</a></li>
-    </ul>
-  </section>
+
+  <div id="main">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is Vahid Vaezian and I'm a Full-stack Data Scientist. </br>
+        I have a passion for Movies and enjoy Camping and Nature. </br>
+        On this website, you'll find more information about me, my work, and how to get in touch.</p>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Check out some of my latest projects <a href="./portfolio/portfolio.html">here</a>.</p>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions or would like to collaborate, feel free to reach out to me through the following channels:</p>
+      <ul>
+        <li>Email: <kbd>vahid.vaezian [at] gmail.com</kbd></li>
+        <li><a href="https://www.linkedin.com/in/vahid-vaezian-13283241/">LinkedIn</a></li>
+        <li><a href="https://github.com/vvaezian">GitHub</a></li>
+      </ul>
+    </section>  
+  </div>
   
   <footer>
     <p>&copy; 2023 Vahid Vaezian. All rights reserved.</p>
