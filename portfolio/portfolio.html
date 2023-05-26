@@ -10,7 +10,7 @@
   <input type="text" id="searchBox" oninput="filterTags()" placeholder="Search tags">
 
   <div id="tags">
-    <div class="tag" onclick="filterProjects('All')" style="font-weight: bold;">All</div>
+    <div class="tag" onclick="filterProjects('All')" style="font-weight: bold;">ALL</div>
 
     <div class="tag" onclick="filterProjects('Python')"><img src="logos/python-logo.png" alt="python logo" class="tag-logo">Python</div>
     <div class="tag" onclick="filterProjects('ChatGPT')"><img src="logos/chatgpt-logo.png" alt="ChatGPT logo" class="tag-logo">ChatGPT</div>
@@ -38,6 +38,7 @@
     <div class="tag" onclick="filterProjects('Amazon S3')"><img src="logos/s3-logo.png" alt="s3 logo" class="tag-logo">Amazon S3</div>
     <div class="tag" onclick="filterProjects('Amazon ECS')"><img src="logos/ecs-logo.png" alt="ecs logo" class="tag-logo">Amazon ECS</div>
     <!-- <div class="tag" onclick="filterProjects('Amazon EMR')"><img src="logos/emr-logo.png" alt="emr logo" class="tag-logo">Amazon EMR</div> -->
+    <div class="tag" onclick="filterProjects('GCP Cloud Functions')"><img src="logos/cloudfunctions-logo.png" alt="cloudfunctions logo" class="tag-logo">GCP Cloud Functions</div>
     <div class="tag" onclick="filterProjects('Metabase')"><img src="logos/metabase-logo.png" alt="metabase logo" class="tag-logo">Metabase</div>
     <div class="tag" onclick="filterProjects('Looker Studio (Data Studio)')"><img src="logos/lookerstudio-logo.png" alt="lookerstudio logo" class="tag-logo">Looker Studio (Data Studio)</div>
     <div class="tag" onclick="filterProjects('Salesforce')"><img src="logos/salesforce-logo.png" alt="salesforce logo" class="tag-logo">SalesForce</div>
@@ -50,6 +51,7 @@
     <div class="tag" onclick="filterProjects('Java')"><img src="logos/java-logo.png" alt="java logo" class="tag-logo">Java</div>
     <div class="tag" onclick="filterProjects('C#')"><img src="logos/csharp-logo.svg" alt="csharp logo" class="tag-logo">C#</div>
     <div class="tag" onclick="filterProjects('ForecastPro')"><img src="logos/forecastpro-logo.png" alt="forecastpro logo" class="tag-logo">ForecastPro</div>
+    <div class="tag" onclick="filterProjects('Google OR-Tools')"><img src="logos/ortools-logo.png" alt="ORtools logo" class="tag-logo">Google OR-Tools</div>
     <div class="tag" onclick="filterProjects('Docker')"><img src="logos/docker-logo.png" alt="docker logo" class="tag-logo">Docker</div>
     <div class="tag" onclick="filterProjects('AWS')"><img src="logos/aws-logo.png" alt="aws logo" class="tag-logo">AWS</div>
     <div class="tag" onclick="filterProjects('GCP')"><img src="logos/gcp-logo.png" alt="gcp logo" class="tag-logo">GCP</div>
@@ -83,7 +85,7 @@
         
         <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Deep Learning">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/Captcha-Solver" target="_blank">Captcha Solver</a>
+                <a class="project-link" href="https://github.com/vvaezian/CAPTCHA-Solver" target="_blank">CAPTCHA Solver</a>
             </div>
             <div class="tags"></div>
         </div>
@@ -94,19 +96,11 @@
                 <a class="project-link" href="" target="_blank">Object Detection and Image Recognition for Liquor Stores Shelf Images</a>
             </div>
             <div class="project-info">
-                <p>Information about Project 1 goes here...</p>
-                <ul>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                </ul>
-            </div>
-            <div class="tags"></div>
-        </div>
 
-        <div class="project" data-tags="Salesforce, SQL Server, PostgreSQL, Amazon RDS, AWS Lambda, Amazon API Gateway, Amazon EC2, Metabase, AWS, CI/CD">
-            <div class="project-title">
-                <a class="project-link" href="" target="_blank">Analytics Solution Delivery in Salesforce</a>
+                <ul>
+                    <li>Used different deep learning models to detect and recognize the products, given images of products on liquor stores' shelves.</li>
+                    <li>Built solutions such as product adjacency analysis and product shelf-level validation.</li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
@@ -117,45 +111,10 @@
             </div>
             <div class="tags"></div>
         </div>
-        
-        <div class="project" data-tags="Python, SQL Server, Amazon EC2, AWS Lambda, AWS, Outlier Detection, Statistical Analysis">
-            <div class="project-title">
-                <a class="project-link" href="" target="_blank">Outlier Detection</a>
-            </div>
-            <div class="tags"></div>
-        </div>
 
-        <div class="project" data-tags="Python, SQL Server, Metabase, Machine Learning, Price Optimization">
-            <div class="project-title">
-                <a class="project-link" href="" target="_blank">Price Optimization</a>
-            </div>
-            <div class="tags"></div>
-        </div>
-
-        <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
+        <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, GCP Cloud Functions, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
                 <a class="project-link" href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">ChatGPT Integration with BI Tools (Live Demo)</a>
-            </div>
-            <div class="tags"></div>
-        </div>
-
-        <div class="project" data-tags="Python, SQL Server, Metabase, ForecastPro, MLflow, Demand Forecasting, Machine Learning, Time Series Analysis, PDF Scraping">
-            <div class="project-title">
-                <a class="project-link" href="" target="_blank">Demand Forecasting</a>
-            </div>
-            <div class="tags"></div>
-        </div>
-
-        <div class="project" data-tags="Python, GitHub, Time Series Analysis, Statistical Analysis">
-            <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/shared/blob/main/Time%20Series%20Forecasting.ipynb" target="_blank">Time Series Analysis of Ridership Data</a>
-            </div>
-            <div class="tags"></div>
-        </div>
-
-        <div class="project" data-tags="Python, SQL Server, Linear Optimization, Production Planning">
-            <div class="project-title">
-                <a class="project-link" href="" target="_blank">Production Planning</a>
             </div>
             <div class="tags"></div>
         </div>
@@ -167,9 +126,16 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Machine Learning">
+        <div class="project" data-tags="Python, AWS Lambda, Amazon RDS, GCP Cloud Functions, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
-                <a class="project-link" href="" target="_blank">Curve Fitting to Estimate Missing Data</a>
+                <a class="project-link" href="https://intellimenta.com/movie_bot/movie_bot.html" target="_blank">Movie Bot</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, PostgreSQL, Amazon RDS, Bash, Metabase, AWS, BI">
+            <div class="project-title">
+                <a class="project-link" href="http://metabase.intellimenta.com/public/dashboard/f9b5e04b-9755-489d-9f5d-6adc3e3806fd" target="_blank">Popularity Index for Programming Languages</a>
             </div>
             <div class="tags"></div>
         </div>
@@ -188,25 +154,100 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, Amazon S3, App Development">
+        <div class="project" data-tags="Salesforce, SQL Server, PostgreSQL, Amazon RDS, AWS Lambda, Amazon API Gateway, Amazon EC2, Metabase, AWS, CI/CD">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/user/repo3" target="_blank">"Shelf Analyzer" Mobile App</a>
+                <a class="project-link" href="" target="_blank">Analytics Solution Delivery in Salesforce</a>
+            </div>
+            <div class="project-info">
+                <p>Designed and implemented analytics solution delivery in Salesforce using a four-layer architecture:</p>
+                <ul>
+                    <li>Salesforce Layer: Apex Classes, VF pages and Flows</li>
+                    <li>Cloud Layer: AWS API Gateway, Lambda and EC2</li>
+                    <li>Reporting Layer: Metabase</li>
+                    <li>Data Layer: SQL Server and Postgres</li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, AWS Lambda, Amazon RDS, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
-        <div class="project-title">
-            <a class="project-link" href="https://intellimenta.com/movie_bot/movie_bot.html" target="_blank">Movie Bot</a>
-        </div>
-        <div class="tags"></div>
+        <div class="project" data-tags="Python, SQL Server, Amazon EC2, AWS Lambda, AWS, Outlier Detection, Statistical Analysis">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Outlier Detection</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Performed outlier detection by implementing Modified Thompson Tau Test and three-sigma method.</li>
+                    <li>Excluding the outliers made it possible for the business to track the KPIs in a dashboard.</li>
+                </ul>
+            </div>
+            <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, PostgreSQL, Amazon RDS, Bash, Metabase, AWS, BI">
-        <div class="project-title">
-            <a class="project-link" href="http://metabase.intellimenta.com/public/dashboard/f9b5e04b-9755-489d-9f5d-6adc3e3806fd" target="_blank">Popularity Index for Programming Languages</a>
+        <div class="project" data-tags="Python, SQL Server, Metabase, Machine Learning, Price Optimization">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Price Optimization</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Built a model to evaluate and prescribe permanent price increases (PPI).</li>
+                    <li>Using the model, the business can evaluate the impact of a PPI before implementing it. The model also
+                        generates PPI suggestions that are expected to have positive impact.</li>
+                </ul>
+            </div>
+            <div class="tags"></div>
         </div>
-        <div class="tags"></div>
+
+        <div class="project" data-tags="Python, SQL Server, Metabase, ForecastPro, MLflow, Demand Forecasting, Machine Learning, Time Series Analysis, PDF Scraping">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Demand Forecasting</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Built a demand forecast model to predict the customers demand.</li>
+                    <li>Outperformed the off-the-shelf tool (ForecastPro) that was being used for demand forecasting.</li>
+                </ul>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, GitHub, Time Series Analysis, Statistical Analysis">
+            <div class="project-title">
+                <a class="project-link" href="https://github.com/vvaezian/shared/blob/main/Time%20Series%20Forecasting.ipynb" target="_blank">Time Series Analysis of Ridership Data</a>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Google OR-Tools, Linear Optimization, Production Planning">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Production Planning</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Used linear optimization to find the optimal solution for production and shipment.</li>
+                    <li>Improved the previous method (manual modifications in an Excel file) both in time and accuracy.</li>
+                </ul>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags="Python, SQL Server, Machine Learning">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">Regression Analysis for Estimating Missing Data</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Processed Excel files and performed Regression analysis to interpolate and estimate missing competitive data.</li>
+                    <li>Used the processed data to identify sales Gaps.</li>
+                </ul>
+            </div>
+            <div class="tags"></div>
+        </div>
+
+        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, Amazon S3, App Development">
+            <div class="project-title">
+                <a class="project-link" href="" target="_blank">"Shelf Analyzer" Mobile App</a>
+            </div>
+            <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Metabase, Looker Studio (Data Studio), BigQuery, BI">
@@ -219,6 +260,13 @@
         <div class="project" data-tags="Bash, PowerShell, SQL Server, Python">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">ETL Automation</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Automated various kinds of data transformation and loading tasks such as moving files, editing Excel files,
+                        running stored procedures and jobs, sending Emails, triggering scripts on remote servers and logging.</li>
+                    <li>Freed up 20 hours/week of manual tasks.</li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
@@ -234,12 +282,26 @@
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Ingesting Live Sensor Data and Visualization</a>
             </div>
+            <div class="project-info">
+                <ul>
+                    <li>Used Python to automate the process of pulling live weather data from the sensors in Okanagan Valley vineyards, 
+                        and writing to PostgreSQL in RDS, so the business users can access the data all in one place.</li>
+                    <li>Developed a frost report dashboard using the gathered data so the vineyards staff can be informed of the impact of 
+                        frost events quickly and take appropriate action.</li>
+                </ul>
+            </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Python, Java, Bash, JavaScript, PDF Scraping">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">PDF Image Scraping and Categorization</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Built a database of product image hashes and names from PDF files.</li>
+                    <li>Given an image, it can find closest image hash in the database and returns the name of the product.</li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>

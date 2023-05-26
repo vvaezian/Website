@@ -52,7 +52,8 @@ function generate_project_tags() {
     ]
 
     logo_name_mapping = {
-        'C#':'csharp', '.Net MAUI':'dotnetmaui', 'Looker Studio (Data Studio)':'lookerstudio'
+        'C#':'csharp', '.Net MAUI':'dotnetmaui', 'Looker Studio (Data Studio)':'lookerstudio', 'GCP Cloud Functions': 'cloudfunctions',
+        'Google OR-Tools':'ortools'
     }
 
     var projects = document.getElementsByClassName("project");
