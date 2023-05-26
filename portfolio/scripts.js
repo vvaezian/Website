@@ -49,12 +49,12 @@ function generate_project_tags() {
         'Machine Learning', 'Deep Learning', 'Object Detection','Image Recognition','Few-shot Learning','Transfer Learning','Outlier Detection',
         'Statistical Analysis','Demand Forecasting','Price Optimization','Production Planning','NLP','Sentiment Analysis',
         'CI/CD','Time Series Analysis','Chatbot','Linear Optimization','App Development','BI','ETL','Web Scraping','PDF Scraping'
-    ]
+    ];
 
     logo_name_mapping = {
         'C#':'csharp', '.Net MAUI':'dotnetmaui', 'Looker Studio (Data Studio)':'lookerstudio', 'GCP Cloud Functions': 'cloudfunctions',
         'Google OR-Tools':'ortools'
-    }
+    };
 
     var projects = document.getElementsByClassName("project");
     for (var i = 0; i < projects.length; i++) {
@@ -69,12 +69,10 @@ function generate_project_tags() {
                 tagItem.innerHTML = tags[j];
             }
             else {
-                var logo_name = tags[j]
-
-                if (logo_name in logo_name_mapping){ 
-                    logo_name = logo_name_mapping[logo_name] 
+                if (tags[j] in logo_name_mapping){ 
+                    logo_name = logo_name_mapping[tags[j]] ;
                 } else {
-                    logo_name = logo_name.replace("Amazon ", "").replace("AWS ", "").replace(" ", "").trim()
+                    logo_name = tags[j].replace("Amazon ", "").replace("AWS ", "").replace(" ", "").trim().toLowerCase();
                 }
                 
                 tagItem.innerHTML = `<img src="logos/${logo_name}-logo.png" alt="${logo_name}" class="tag-logo">` + tags[j] + '</img>';
