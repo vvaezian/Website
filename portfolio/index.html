@@ -62,6 +62,7 @@
     <div class="tag" onclick="filterProjects('Android')"><img src="logos/android-logo.png" alt="android logo" class="tag-logo">Android</div>
     <div class="tag" onclick="filterProjects('Machine Learning')">Machine Learning</div>
     <div class="tag" onclick="filterProjects('Deep Learning')">Deep Learning</div>
+    <div class="tag" onclick="filterProjects('Computer Vision')">Computer Vision</div>
     <div class="tag" onclick="filterProjects('Object Detection')">Object Detection</div>
     <div class="tag" onclick="filterProjects('Image Recognition')">Image Recognition</div>
     <div class="tag" onclick="filterProjects('Few-shot Learning')">Few-shot Learning</div>
@@ -86,14 +87,15 @@
   </div>
     <div id="projects" class="project-container">
         
-        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Deep Learning">
+        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Computer Vision, Deep Learning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">CAPTCHA Solver</a>
             </div>
             <div class="project-info">
                 <ul>
                     <li>CAPTCHAs in this project were images of numbers (<a href="https://www.game2.cn/verifyCode.php" target="_blank">sample <span class="glyphicon">&#xe164;</span></a>).</li>
-                    <li>Built a tensorflow model to reconize the numbers from images and achieved 88% accuracy.</li>
+                    <li>Built a TensorFlow model to reconize the numbers from images.</li>
+                    <li>Achieved 88% accuracy overal and 95% accuracy on digit-level.</li>
                     <li><a href="https://github.com/vvaezian/CAPTCHA-Solver" target="_blank">GitHub Repository <span class="glyphicon">&#xe164;</span></a></li>
                 </ul>
             </div>
@@ -101,13 +103,15 @@
         </div>
 
         <div class="project" data-tags="Python, Deep Learning, TensorFlow, Keras, CVAT, OpenCV, PostgreSQL, Docker, Amazon SageMaker, Amazon RDS, Amazon S3, AWS Lambda, 
-        Amazon Rekognition, Amazon ECS, AWS, Object Detection, Image Recognition, Few-shot Learning, Transfer Learning">
+        Amazon Rekognition, Amazon ECS, AWS, Object Detection, Image Recognition, Computer Vision, Few-shot Learning, Transfer Learning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Object Detection and Image Recognition for Liquor Stores Shelf Images</a>
             </div>
             <div class="project-info">
                 <ul>
-                    <li>Used different deep learning models to detect and recognize the products, given images of products on liquor stores' shelves.</li>
+                    <li>Used different deep learning models to detect and recognize the products liquor stores' shelf images.</li>
+                    <li>Used CVAT for labelling the data.</li>
+                    <li>Used SageMaker for distributed parameter tuning and deploying the model.</li>
                     <li>Built solutions such as product adjacency analysis and product shelf-level validation.</li>
                 </ul>
             </div>
@@ -116,49 +120,102 @@
 
         <div class="project" data-tags="ChatGPT, Python, Flask, NGINX, HTML, CSS, Amazon EC2, AWS, Chatbot">
             <div class="project-title">
-                <a class="project-link" href="http://demo.vahidvaezian.net/chatgpt-flask-demo" target="_blank">Chatbot Interface with ChatGPT Backend (Live Demo)</a>
+                <a class="project-link" href="" target="_blank">Chatbot Interface with ChatGPT Backend</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Built an interface for ChatGPT using flask on Amazon EC2.</li>
+                    <li>This can be used for integrating chatGPT into other apps.</li>
+                    <li><a href="http://demo.vahidvaezian.net/chatgpt-flask-demo" target="_blank">Live Demo <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, GCP Cloud Functions, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
-                <a class="project-link" href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">ChatGPT Integration with BI Tools (Live Demo)</a>
+                <a class="project-link" href="" target="_blank">ChatGPT Integration with BI Tools</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>This is a demo of chatGPT integration with Metabase (a BI tool).</li>
+                    <li>This can be used for integrating chatGPT into other apps as the BI layer.</li>
+                    <li><a href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">Live Demo <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, NLP, Sentiment Analysis, Deep Learning">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/Twitter_Sentiment_Analysis" target="_blank">Sentiment Analysis of Twitter Data</a>
+                <a class="project-link" href="" target="_blank">Sentiment Analysis of Twitter Data</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Performed Polarity Classification (positive/negative/neutral) on a dataset of 40,000 tweets using deep learning algorithms.
+                    <li>Achieved 95% accuracy (since there were three classes, the random classification would result in 33% accuracy).</li>
+                    <li><a href="https://github.com/vvaezian/Twitter_Sentiment_Analysis" target="_blank">GitHub Repository <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Python, AWS Lambda, Amazon RDS, GCP Cloud Functions, PostgreSQL, Metabase, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
-                <a class="project-link" href="https://intellimenta.com/movie_bot/movie_bot.html" target="_blank">Movie Bot</a>
+                <a class="project-link" href="" target="_blank">Movie Bot</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Developed a bot that answers questions about movies and series.</li>
+                    <li>Works with text and voice commands (using GCP speech-to-text).</li>
+                    <li>Data is based on 15 million records from IMDB dump files and 500K records scraped from IMDB website.</li>
+                    <li>Detects names (actors/actresses/directors/writers/composers), genres, time range and countries.</li>
+                    <li>Robust to input typos.</li>
+                    <li><a href="https://intellimenta.com/movie_bot/movie_bot.html" target="_blank">Live App <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Python, SQL Server, PostgreSQL, Amazon RDS, Bash, Metabase, AWS, BI">
             <div class="project-title">
-                <a class="project-link" href="http://metabase.intellimenta.com/public/dashboard/f9b5e04b-9755-489d-9f5d-6adc3e3806fd" target="_blank">Popularity Index for Programming Languages</a>
+                <a class="project-link" href="" target="_blank">Popularity Index for Programming Languages</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Calculated a popularity index for ranking the popularity of programming languages and recognizing trends over time.</li>
+                    <li>Data is based on 70 million posts and 100 million comments from the StackOverflow website.</li>
+                    <li>Used Metabase for Visualisation and a public dashboard.</li>
+                    <li>More details in <a href="https://towardsdatascience.com/popularity-ranking-of-programming-languages-72bcf697ea20" target="_blank">this post <span class="glyphicon">&#xe164;</span></a> in Medium.</li>
+                    <li><a href="http://metabase.intellimenta.com/public/dashboard/f9b5e04b-9755-489d-9f5d-6adc3e3806fd" target="_blank">Live Dashboard <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Python, Statistical Analysis, Outlier Detection">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/modified_thompson_tau_test" target="_blank">Python Package for Modified Thompson Tau Test</a>
+                <a class="project-link" href="" target="_blank">Python Package for Outlier Detection</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Created a Python package that implements the Modified Thomposon Tau test for outlier detection.
+                    <li><a href="https://github.com/vvaezian/modified_thompson_tau_test" target="_blank">GitHub Repository <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Python, Metabase, BI">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/metabase_api_python" target="_blank">Python Wrapper for Metabase API</a>
+                <a class="project-link" href="" target="_blank">Python Wrapper for Metabase API</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Developed a popular Python wrapper for Metabase API.
+                    <li>Can be used for creating visualization and performing tasks programmatically.</li>
+                    <li><a href="https://github.com/vvaezian/metabase_api_python" target="_blank">GitHub Repository <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
@@ -185,7 +242,7 @@
             </div>
             <div class="project-info">
                 <ul>
-                    <li>Performed outlier detection by implementing Modified Thompson Tau Test and three-sigma method.</li>
+                    <li>Performed outlier detection using Modified Thompson Tau Test and three-sigma method to cleanup the data.</li>
                     <li>Excluding the outliers made it possible for the business to track the KPIs in a dashboard.</li>
                 </ul>
             </div>
@@ -221,7 +278,14 @@
 
         <div class="project" data-tags="Python, GitHub, Time Series Analysis, Statistical Analysis">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/shared/blob/main/Time%20Series%20Forecasting.ipynb" target="_blank">Time Series Analysis of Ridership Data</a>
+                <a class="project-link" href="" target="_blank">Time Series Analysis of Ridership Data</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Performed time series analysis to forecast the daily ridership.
+                    <li>Achieved 5.01% MAPE error and 3.97% wMAPE error.</li>
+                    <li><a href="https://github.com/vvaezian/shared/blob/main/Time%20Series%20Forecasting.ipynb" target="_blank">GitHub Repository <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
@@ -256,12 +320,24 @@
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">"Shelf Analyzer" Mobile App</a>
             </div>
+            <div class="project-info">
+                <ul>
+                    <li>Developed an app to be used by sales representatives to upload product photos to the cloud and get insights about the products in the app.</li>
+                    <li>Used Amazon Cognito for authentication and authorization.</li>
+                </ul>
+            </div>
             <div class="tags"></div>
         </div>
 
         <div class="project" data-tags="Metabase, Looker Studio (Data Studio), BigQuery, BI">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Looker Studio (Data Studio) to Metabase Migration</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Migrated a Looker Studio (AKA Data Studio) dashboard to Metabase.</li>
+                    <li>Performed data cleanup in BigQuery.</li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
@@ -272,7 +348,7 @@
             </div>
             <div class="project-info">
                 <ul>
-                    <li>Automated various kinds of data transformation and loading tasks such as moving files, editing Excel files,
+                    <li>Automated various data transformation and data loading tasks such as moving files, editing Excel files,
                         running stored procedures and jobs, sending Emails, triggering scripts on remote servers and logging.</li>
                     <li>Freed up 20 hours/week of manual tasks.</li>
                 </ul>
@@ -282,7 +358,13 @@
 
         <div class="project" data-tags="Java, PHP, SQLite, MySQL, Android, App Development">
             <div class="project-title">
-                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.vvaezian.multilingovocabularypractice" target="_blank">"MultiLingo Vocabulary Practice" Mobile App</a>
+                <a class="project-link" href="" target="_blank">"MultiLingo Vocabulary Practice" Mobile App</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>Developed an app for "cross-practicing" multiple languages.
+                    <li><a href="https://play.google.com/store/apps/details?id=com.vvaezian.multilingovocabularypractice" target="_blank">App in Google Play <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>

@@ -48,7 +48,8 @@ function generate_project_tags() {
     no_logo_list = [
         'Machine Learning', 'Deep Learning', 'Object Detection','Image Recognition','Few-shot Learning','Transfer Learning','Outlier Detection',
         'Statistical Analysis','Demand Forecasting','Price Optimization','Production Planning','NLP','Sentiment Analysis',
-        'CI/CD','Time Series Analysis','Chatbot','Linear Optimization','App Development','BI','ETL','Web Scraping','PDF Scraping', 'Excel Scraping'
+        'CI/CD','Time Series Analysis','Chatbot','Linear Optimization','App Development','BI','ETL','Web Scraping','PDF Scraping', 'Excel Scraping',
+        'Computer Vision'
     ];
 
     logo_name_mapping = {
@@ -103,24 +104,37 @@ function initCap(str) {
   }
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     var projectLinks = document.getElementsByClassName('project-link');
-    
+  
     for (var i = 0; i < projectLinks.length; i++) {
-        projectLinks[i].addEventListener('click', function(event) {
-            
-            if (this.getAttribute('href') === '') {
-                event.preventDefault(); // Prevent default link behavior
-
-                var projectInfo = this.parentNode.nextElementSibling;
-                if (projectInfo.classList.contains('show')) {
-                    projectInfo.classList.remove('show');
-                    projectInfo.style.height = '0px';
-                } else {
-                    projectInfo.style.height = projectInfo.scrollHeight + 'px';
-                    projectInfo.classList.add('show');
-                }
+      projectLinks[i].addEventListener('click', function(event) {
+        if (this.getAttribute('href') === '') {
+          event.preventDefault(); // Prevent default link behavior
+  
+          var projectInfo = this.parentNode.nextElementSibling;
+          var allProjectInfos = document.getElementsByClassName('project-info');
+  
+          // Close all other sections
+          for (var j = 0; j < allProjectInfos.length; j++) {
+            var currentProjectInfo = allProjectInfos[j];
+            if (currentProjectInfo !== projectInfo && currentProjectInfo.classList.contains('show')) {
+              currentProjectInfo.classList.remove('show');
+              currentProjectInfo.style.height = '0px';
             }
-        });
+          }
+  
+          // Toggle the clicked section
+          if (projectInfo.classList.contains('show')) {
+            projectInfo.classList.remove('show');
+            projectInfo.style.height = '0px';
+          } else {
+            projectInfo.style.height = projectInfo.scrollHeight + 'px';
+            projectInfo.classList.add('show');
+          }
+        }
+      });
     }
-});
+  });
+  
