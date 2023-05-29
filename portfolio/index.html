@@ -2,10 +2,11 @@
 <html>
 <head>
   <title>Vahid Vaezian's Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <h1>Vahid Vaezian's Portfolio</h1>
+  <h1 style="margin-bottom: 40px; padding-top: 10px;">Vahid Vaezian's Portfolio</h1>
 
   <input type="text" id="searchBox" oninput="filterTags()" placeholder="Search tags">
 
@@ -44,6 +45,7 @@
     <div class="tag" onclick="filterProjects('Salesforce')"><img src="logos/salesforce-logo.png" alt="salesforce logo" class="tag-logo">SalesForce</div>
     <div class="tag" onclick="filterProjects('GitHub')"><img src="logos/github-logo.png" alt="github logo" class="tag-logo">GitHub</div>
     <div class="tag" onclick="filterProjects('Flask')"><img src="logos/flask-logo.png" alt="flask logo" class="tag-logo">Flask</div>
+    <div class="tag" onclick="filterProjects('NGINX')"><img src="logos/nginx-logo.png" alt="nginx logo" class="tag-logo">NGINX</div>
     <div class="tag" onclick="filterProjects('HTML')"><img src="logos/html-logo.png" alt="html logo" class="tag-logo">HTML</div>
     <div class="tag" onclick="filterProjects('CSS')"><img src="logos/css-logo.png" alt="css logo" class="tag-logo">CSS</div>
     <div class="tag" onclick="filterProjects('PHP')"><img src="logos/php-logo.png" alt="php logo" class="tag-logo">PHP</div>
@@ -78,14 +80,22 @@
     <div class="tag" onclick="filterProjects('App Development')">App Development</div>
     <div class="tag" onclick="filterProjects('BI')">BI</div>
     <div class="tag" onclick="filterProjects('ETL')">ETL</div>
-    <div class="tag" onclick="filterProjects('Web Scraping')">Web Scraping</div>
     <div class="tag" onclick="filterProjects('PDF Scraping')">PDF Scraping</div>
+    <div class="tag" onclick="filterProjects('Excel Scraping')">Excel Scraping</div>
+    <div class="tag" onclick="filterProjects('Web Scraping')">Web Scraping</div>
   </div>
     <div id="projects" class="project-container">
         
         <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Deep Learning">
             <div class="project-title">
-                <a class="project-link" href="https://github.com/vvaezian/CAPTCHA-Solver" target="_blank">CAPTCHA Solver</a>
+                <a class="project-link" href="" target="_blank">CAPTCHA Solver</a>
+            </div>
+            <div class="project-info">
+                <ul>
+                    <li>CAPTCHAs in this project were images of numbers (<a href="https://www.game2.cn/verifyCode.php" target="_blank">sample <span class="glyphicon">&#xe164;</span></a>).</li>
+                    <li>Built a tensorflow model to reconize the numbers from images and achieved 88% accuracy.</li>
+                    <li><a href="https://github.com/vvaezian/CAPTCHA-Solver" target="_blank">GitHub Repository <span class="glyphicon">&#xe164;</span></a></li>
+                </ul>
             </div>
             <div class="tags"></div>
         </div>
@@ -96,7 +106,6 @@
                 <a class="project-link" href="" target="_blank">Object Detection and Image Recognition for Liquor Stores Shelf Images</a>
             </div>
             <div class="project-info">
-
                 <ul>
                     <li>Used different deep learning models to detect and recognize the products, given images of products on liquor stores' shelves.</li>
                     <li>Built solutions such as product adjacency analysis and product shelf-level validation.</li>
@@ -105,9 +114,9 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="ChatGPT, Python, Flask, AWS Elastic Beanstalk, HTML, CSS, Chatbot, AWS">
+        <div class="project" data-tags="ChatGPT, Python, Flask, NGINX, HTML, CSS, Amazon EC2, AWS, Chatbot">
             <div class="project-title">
-                <a class="project-link" href="http://chatgptdemo-env.eba-nf9heacb.us-west-2.elasticbeanstalk.com/" target="_blank">Chatbot Interface with ChatGPT Backend (Live Demo)</a>
+                <a class="project-link" href="http://demo.vahidvaezian.net/chatgpt-flask-demo" target="_blank">Chatbot Interface with ChatGPT Backend (Live Demo)</a>
             </div>
             <div class="tags"></div>
         </div>
@@ -154,7 +163,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Salesforce, SQL Server, PostgreSQL, Amazon RDS, AWS Lambda, Amazon API Gateway, Amazon EC2, Metabase, AWS, CI/CD">
+        <div class="project" data-tags="Salesforce, SQL Server, PostgreSQL, Amazon RDS, AWS Lambda, Amazon API Gateway, Amazon EC2, Metabase, AWS, CI/CD, Excel Scraping">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Analytics Solution Delivery in Salesforce</a>
             </div>
@@ -217,7 +226,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Google OR-Tools, Linear Optimization, Production Planning">
+        <div class="project" data-tags="Python, SQL Server, Google OR-Tools, Linear Optimization, Production Planning, Excel Scraping">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Production Planning</a>
             </div>
@@ -230,7 +239,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Machine Learning">
+        <div class="project" data-tags="Python, SQL Server, Machine Learning, Excel Scraping">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Regression Analysis for Estimating Missing Data</a>
             </div>
