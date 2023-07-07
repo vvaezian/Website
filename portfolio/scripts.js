@@ -46,7 +46,7 @@ function generate_project_tags() {
     // Generate tag items for each project
 
     no_logo_list = [
-        'AI', 'Machine Learning', 'Deep Learning', 'Object Detection','Image Recognition','Few-shot Learning','Transfer Learning','Outlier Detection',
+        'Machine Learning', 'Deep Learning', 'Object Detection','Image Recognition','Few-shot Learning','Transfer Learning','Outlier Detection',
         'Statistical Analysis','Demand Forecasting','Price Optimization','Production Planning','NLP','Sentiment Analysis',
         'CI/CD','Time Series Analysis','Chatbot','Linear Optimization','App Development','BI','ETL','Web Scraping','PDF Scraping', 'Excel Scraping',
         'Computer Vision'

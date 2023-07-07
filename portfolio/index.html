@@ -27,6 +27,7 @@
     <div class="tag" onclick="filterProjects('BigQuery')"><img src="logos/bigquery-logo.png" alt="bigquery logo" class="tag-logo">BigQuery</div>
     <div class="tag" onclick="filterProjects('MySQL')"><img src="logos/mysql-logo.png" alt="mysql logo" class="tag-logo">MySQL</div>
     <div class="tag" onclick="filterProjects('SQLite')"><img src="logos/sqlite-logo.png" alt="sqlite logo" class="tag-logo">SQLite</div>
+    <div class="tag" onclick="filterProjects('Figma')"><img src="logos/figma-logo.png" alt="figma logo" class="tag-logo">Figma</div>
     <!-- <div class="tag" onclick="filterProjects('dbt')"><img src="logos/dbt-logo.png" alt="dbt logo" class="tag-logo">dbt</div> -->
     <div class="tag" onclick="filterProjects('AWS Lambda')"><img src="logos/lambda-logo.svg" alt="aws Lambda logo" class="tag-logo">AWS Lambda</div>
     <div class="tag" onclick="filterProjects('Amazon RDS')"><img src="logos/rds-logo.svg" alt="rds logo" class="tag-logo">Amazon RDS</div>
@@ -62,7 +63,6 @@
     <div class="tag" onclick="filterProjects('.Net MAUI')"><img src="logos/dotnetmaui-logo.png" alt="dotnetmaui logo" class="tag-logo">.Net MAUI</div>
     <div class="tag" onclick="filterProjects('XAML')"><img src="logos/xaml-logo.png" alt="xaml logo" class="tag-logo">XAML</div>
     <div class="tag" onclick="filterProjects('Android')"><img src="logos/android-logo.png" alt="android logo" class="tag-logo">Android</div>
-    <div class="tag" onclick="filterProjects('AI')">AI</div>
     <div class="tag" onclick="filterProjects('Machine Learning')">Machine Learning</div>
     <div class="tag" onclick="filterProjects('Deep Learning')">Deep Learning</div>
     <div class="tag" onclick="filterProjects('Computer Vision')">Computer Vision</div>
@@ -90,7 +90,7 @@
   </div>
     <div id="projects" class="project-container">
         
-        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Computer Vision, Deep Learning, AI">
+        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, Image Recognition, Computer Vision, Deep Learning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">CAPTCHA Solver</a>
             </div>
@@ -105,7 +105,7 @@
             <div class="tags"></div>
         </div>
         
-        <div class="project" data-tags="ChatGPT, Python, AWS Lambda, Amazon SNS, Amazon Pinpoint, AWS, Chatbot, AI">
+        <div class="project" data-tags="ChatGPT, Python, AWS Lambda, Amazon SNS, Amazon Pinpoint, AWS, Chatbot">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">SMS Chatbot with ChatGPT Backend</a>
             </div>
@@ -113,12 +113,13 @@
                 <ul>
                     <li>Built a web interface for ChatGPT using flask on Amazon EC2.</li>
                     <li>This way chatGPT can be used when there is no internet connection (only cell signal).</li>
+                    <li>It's statefull (i.e. maintains history of conversations and understands the questions in the context of previous ones)</li>
                 </ul>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, TensorFlow, Keras, CVAT, OpenCV, PostgreSQL, Docker, Amazon SageMaker, Amazon Rekognition, Amazon RDS, Amazon S3, AWS Lambda, Amazon ECS, AWS, Object Detection, Image Recognition, Computer Vision, Few-shot Learning, Transfer Learning, Deep Learning, AI">
+        <div class="project" data-tags="Python, TensorFlow, Keras, CVAT, OpenCV, PostgreSQL, Docker, Amazon SageMaker, Amazon Rekognition, Amazon RDS, Amazon S3, AWS Lambda, Amazon ECS, AWS, Object Detection, Image Recognition, Computer Vision, Few-shot Learning, Transfer Learning, Deep Learning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Object Detection and Image Recognition for Liquor Stores Shelf Images</a>
             </div>
@@ -133,7 +134,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="ChatGPT, Python, Flask, NGINX, HTML, CSS, Amazon EC2, AWS, Chatbot, AI">
+        <div class="project" data-tags="ChatGPT, Python, Flask, NGINX, HTML, CSS, Amazon EC2, AWS, Chatbot">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Chatbot Web Interface with ChatGPT Backend</a>
             </div>
@@ -141,13 +142,14 @@
                 <ul>
                     <li>Built a web interface for ChatGPT using flask on Amazon EC2.</li>
                     <li>This can be used for integrating chatGPT into other apps.</li>
+                    <li>It's statefull (i.e. maintains history of conversations and understands the questions in the context of previous ones)</li>
                     <li><a href="http://demo.vahidvaezian.net/chatgpt-flask-demo" target="_blank">Live Demo <span class="glyphicon">&#xe164;</span></a></li>
                 </ul>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, GCP Cloud Functions, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI, AI">
+        <div class="project" data-tags="ChatGPT, Python, Metabase, AWS Lambda, GCP Cloud Functions, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">ChatGPT Integration with BI Tools</a>
             </div>
@@ -155,13 +157,14 @@
                 <ul>
                     <li>This is a demo of chatGPT integration with Metabase (a BI tool).</li>
                     <li>This can be used for integrating chatGPT into other apps as the BI layer.</li>
+                    <li>It's statefull (i.e. maintains history of conversations and understands the questions in the context of previous ones)</li>
                     <li><a href="https://intellimenta.com/metabase_bot/metabase_bot.php" target="_blank">Live Demo <span class="glyphicon">&#xe164;</span></a></li>
                 </ul>
             </div>
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, NLP, Sentiment Analysis, Deep Learning, AI">
+        <div class="project" data-tags="Python, TensorFlow, Keras, GitHub, NLP, Sentiment Analysis, Deep Learning">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Sentiment Analysis of Twitter Data</a>
             </div>
@@ -175,7 +178,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, AWS Lambda, Amazon API Gateway, Amazon RDS, PostgreSQL, GCP Cloud Functions, Metabase, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI, AI">
+        <div class="project" data-tags="Python, AWS Lambda, Amazon API Gateway, Amazon RDS, PostgreSQL, GCP Cloud Functions, Metabase, HTML, CSS, JavaScript, PHP, AWS, GCP, Chatbot, BI">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Movie Bot</a>
             </div>
@@ -264,7 +267,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Metabase, Machine Learning, Price Optimization, AI">
+        <div class="project" data-tags="Python, SQL Server, Metabase, Machine Learning, Price Optimization">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Price Optimization</a>
             </div>
@@ -278,7 +281,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Metabase, ForecastPro, MLflow, Demand Forecasting, Machine Learning, Time Series Analysis, PDF Scraping, AI">
+        <div class="project" data-tags="Python, SQL Server, Metabase, ForecastPro, MLflow, Demand Forecasting, Machine Learning, Time Series Analysis, PDF Scraping">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Demand Forecasting</a>
             </div>
@@ -318,7 +321,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags="Python, SQL Server, Machine Learning, Excel Scraping, AI">
+        <div class="project" data-tags="Python, SQL Server, Machine Learning, Excel Scraping">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">Regression Analysis for Estimating Missing Data</a>
             </div>
@@ -331,7 +334,7 @@
             <div class="tags"></div>
         </div>
 
-        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, Amazon S3, App Development">
+        <div class="project" data-tags=".Net MAUI, C#, XAML, Amazon Cognito, Amazon S3, Figma, App Development">
             <div class="project-title">
                 <a class="project-link" href="" target="_blank">"Shelf Analyzer" Mobile App</a>
             </div>
